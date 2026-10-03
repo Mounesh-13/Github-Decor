@@ -91,5 +91,17 @@
     <text x="0" y="-26" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#111">DO NOT PRESS</text>
   </g>
 </g>
-<!-- ACT5 -->
+<g id="act5">
+  <g id="spinner" transform="translate(400,200)" opacity="0">
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.02;0.2;0.25" begin="0s" dur="24s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" begin="19s" dur="1.6s" repeatCount="indefinite"/>
+      <circle cx="0" cy="0" r="34" fill="none" stroke="#111" stroke-width="8" stroke-dasharray="40 30" stroke-linecap="round"/>
+    </g>
+    <text x="0" y="70" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111">loading…</text>
+  </g>
+  <rect x="0" y="0" width="800" height="400" fill="#111" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.9;0" keyTimes="0;0.9;0.95;1" begin="0s" dur="24s" repeatCount="indefinite"/>
+  </rect>
+</g>
 </svg>

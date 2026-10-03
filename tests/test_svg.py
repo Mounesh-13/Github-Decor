@@ -42,3 +42,13 @@ def test_act4_present():
     assert 'id="act4"' in t
     assert 'leak-drop' in t
     assert 'big-red-button' in t
+def test_act5_present():
+    from pathlib import Path
+    t = Path("assets/escape.svg").read_text(encoding="utf-8")
+    assert 'id="act5"' in t
+    assert 'id="spinner"' in t
+    assert 'begin="19s"' in t
+def test_no_placeholders():
+    from pathlib import Path
+    t = Path("assets/escape.svg").read_text(encoding="utf-8")
+    assert "ACT2" not in t and "ACT3" not in t and "ACT4" not in t and "ACT5" not in t

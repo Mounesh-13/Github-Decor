@@ -36,3 +36,9 @@ def test_act3_present():
     assert 'id="mallet"' in t
     assert 'id="crack"' in t
     assert 'begin="8s"' in t
+def test_act4_present():
+    from pathlib import Path
+    t = Path("assets/escape.svg").read_text(encoding="utf-8")
+    assert 'id="act4"' in t
+    assert 'leak-drop' in t
+    assert 'big-red-button' in t

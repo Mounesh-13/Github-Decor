@@ -33,7 +33,28 @@
     </g>
   </g>
 </g>
-<!-- ACT2 -->
+<g id="act2" opacity="0">
+  <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.9;1" begin="0s" dur="24s" repeatCount="indefinite"/>
+  <!-- eyes widen at 4s -->
+  <g id="eyes-wide" transform="translate(470,240)" opacity="0">
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.02;0.2;0.25" begin="0s" dur="24s" repeatCount="indefinite"/>
+    <circle cx="-8" cy="0" r="3" fill="#111"><animate attributeName="r" values="3;7;7;3" keyTimes="0;0.1;0.8;1" begin="4s" dur="4s" fill="freeze" repeatCount="indefinite"/></circle>
+    <circle cx="8" cy="0" r="3" fill="#111"><animate attributeName="r" values="3;7;7;3" keyTimes="0;0.1;0.8;1" begin="4s" dur="4s" fill="freeze" repeatCount="indefinite"/></circle>
+    <text x="0" y="-24" text-anchor="middle" font-size="22" font-family="sans-serif" fill="#111">!</text>
+  </g>
+  <!-- knock ripples at 6s and 6.6s -->
+  <circle id="knock-ripple-1" cx="620" cy="180" r="6" fill="none" stroke="#111" stroke-width="3" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" begin="6s" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="6;34" begin="6s" dur="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle id="knock-ripple-2" cx="620" cy="180" r="6" fill="none" stroke="#111" stroke-width="3" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" begin="6.6s" dur="0.8s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="6;34" begin="6.6s" dur="0.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="620" y="120" text-anchor="middle" font-size="26" font-family="sans-serif" fill="#111" opacity="0">BONK!
+    <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.1;1" begin="6s" dur="2s" repeatCount="indefinite"/>
+  </text>
+</g>
 <!-- ACT3 -->
 <!-- ACT4 -->
 <!-- ACT5 -->

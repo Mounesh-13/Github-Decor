@@ -22,3 +22,10 @@ def test_act1_present():
     assert 'id="act1"' in t
     assert 'id="walker"' in t
     assert 'id="banana"' in t
+def test_act2_present():
+    from pathlib import Path
+    t = Path("assets/escape.svg").read_text(encoding="utf-8")
+    assert 'id="act2"' in t
+    assert 'id="eyes-wide"' in t
+    assert 'knock-ripple' in t
+    assert 'begin="4s"' in t
